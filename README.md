@@ -14,8 +14,8 @@ The Users will also be able to leave comments on the articles displayed and revi
 
 ![savedarticle](https://user-images.githubusercontent.com/44099789/55247025-eff6c680-521c-11e9-968f-0d644a9a3a83.PNG)
 
-## Could not Complete the save note in model for saved articles
-##Technology
+Could not Complete the save note in model for saved articles
+# Technology
 HTML, CSS, jQuery, Bootstrap, Handlebars.js
 JavaScript
 Node.js
