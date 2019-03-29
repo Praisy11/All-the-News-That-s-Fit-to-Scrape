@@ -1,0 +1,60 @@
+<div class="container3">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">News Scraper</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="btn btn-danger nav-item nav-link" href="/">Home</a>
+      <a class="btn btn-danger nav-item nav-link active" href="/saved">Saved articles</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<div class="container1">
+  <h3>Saved articles</h3>
+  {{#each articles}}
+    <div class="card bg-dark mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <a href='https://www.nytimes.com{{link}}' class="card-link" target="_blank">View article </a>
+        <p class="card-text">{{summary}}...</p>
+        <a data-articleId= {{_id}} class="btn btn-primary unsave-btn">Delete saved</a>
+        <a data-articleId= {{_id}} class="btn btn-primary note-modal-btn" data-toggle="modal">Add note</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div id="add-note-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"> &times;</button>
+          <h5 class="modal-title" id="note-modal-title">Add Note</h5>
+          <h4 id="articleId"></h4>
+        </div>
+        <div class="modal-body">
+        <div class="bootbox-body" id="note-container">
+         <ul class="notes-list">
+        </ul>
+                   
+        <form>
+          <div class="form-group">
+            <label for="note-area" class="col-form-label">New Note:</label>
+            <textarea class="form-control" id="note-body"></textarea>
+          </div>
+        </form>
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success " id="note-save-btn" data-dismiss="modal">Save Note</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
