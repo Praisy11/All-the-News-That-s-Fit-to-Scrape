@@ -11,7 +11,7 @@ Summary - a short summary of the article
 Link - the url to the original article
 
 The Users will also be able to leave comments on the articles displayed and revisit them later. The comments will be saved to the database as well and associated with their articles. Users will also be able to delete comments left on articles.
-
+## Could not Complete the save note in model for saved articles
 ##Technology
 HTML, CSS, jQuery, Bootstrap, Handlebars.js
 JavaScript
